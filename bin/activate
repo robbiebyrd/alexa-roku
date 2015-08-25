@@ -37,7 +37,11 @@ deactivate () {
 # unset irrelavent variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/Users/robbiebyrd/Sites/alexa-roku"
+=======
+VIRTUAL_ENV="/opt/alexa-roku"
+>>>>>>> abb05b76a753c13738bc9d719e8fbfa2bbb69550
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
