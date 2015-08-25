@@ -5,4 +5,8 @@ lib
 include
 
 # Mac OS X custom attribute files
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> Reset
