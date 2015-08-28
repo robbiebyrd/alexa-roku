@@ -14,7 +14,7 @@ def run(app):
         from OpenSSL import SSL
         import ssl
         context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-        context.load_cert_chain('/etc/pki/tls/certs/star.robbiebyrd.com.crt', '/etc/pki/tls/certs/star.robbiebyrd.com.key')
+        context.load_cert_chain('/etc/pki/tls/certs/star.robbiebyrd.com.crt', '/etc/pki/tls/private/star.robbiebyrd.com.key')
         app.run(debug=True,
                 port=5000,
                 ssl_context=context,
