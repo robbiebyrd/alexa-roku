@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "intent": "RokuPlay",
+      "slots": []
+    },
+    {
+      "intent": "RokuReverse",
+      "slots": []
+    },
+    {
+      "intent": "RokuForward",
+      "slots": []
+    },
+    {
+      "intent": "RokuHome",
+      "slots": []
+    },
+    {
+      "intent": "RokuSelect",
+      "slots": []
+    },
+    {
+      "intent": "RokuLeft",
+      "slots": []
+    },
+    {
+      "intent": "RokuRight",
+      "slots": []
+    },
+    {
+      "intent": "RokuDown",
+      "slots": []
+    },
+    {
+      "intent": "RokuUp",
+      "slots": []
+    },
+    {
+      "intent": "RokuBack",
+      "slots": []
+    },
+    {
+      "intent": "RokuReplay",
+      "slots": []
+    },
+    {
+      "intent": "RokuInfo",
+      "slots": []
+    },
+    {
+      "intent": "RokuBackspace",
+      "slots": []
+    },
+    {
+      "intent": "RokuSearch",
+      "slots": [
+        {
+          "name": "Search",
+          "type": "LITERAL"
+        },
+        ]
+    },
+    {
+      "intent": "RokuEnter",
+      "slots": []
+    },
+  ]
+}
