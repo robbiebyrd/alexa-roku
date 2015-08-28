@@ -1,5 +1,6 @@
 #! /usr/bin/python
-import json, roku
+import json
+import roku
 appVersion = 1.0
 
 
@@ -8,7 +9,7 @@ def data_init():
     MyDataStore = DataStore()
 
     global roku
-    roku = Roku('72.182.86.27')
+    roku = roku.Roku('72.182.86.27')
 
 
 
