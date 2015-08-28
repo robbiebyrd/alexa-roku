@@ -1,0 +1,24 @@
+RokuPlay play
+
+RokuReverse rewind
+RokuReverse reverse
+RokuReverse back up
+
+RokuForward forward
+RokuForward fast forward
+RokuForward skip
+
+RokuHome home
+RokuSelect select
+RokuLeft left
+RokuRight right
+RokuDown down
+RokuUp up
+RokuBack back
+RokuBack go back
+RokuReplay replay
+RokuReplay replay that
+RokuInfo info
+RokuBackspace backspace
+RokuSearch {name|Search}
+RokuEnter enter
