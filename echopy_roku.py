@@ -223,6 +223,9 @@ def intent_request(session, user, request):
         return launch_request(session, user, request) ##Just do the same thing as launch request
 
 
+
+
+    
 class Session:
     def __init__(self,sessionData):
         self.sessionId = sessionData['sessionId']
@@ -256,4 +259,3 @@ class DataStore:
             self.users[userId] = User(userId)
 
         return self.users[userId]
-
