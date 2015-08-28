@@ -18,7 +18,6 @@ from flask import Flask, render_template, Response, send_from_directory, request
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def main():
 	return echopy_doc.main_page
