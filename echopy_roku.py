@@ -15,7 +15,7 @@ def data_init():
 
 def data_handler(rawdata):
     global MyDataStore
-    #print rawdata['session']
+    print(rawdata)
     currentSession = MyDataStore.getSession(rawdata['session'])
     currentUser = MyDataStore.getUser(rawdata['session'])
     currentRequest = rawdata['request']
