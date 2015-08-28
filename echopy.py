@@ -35,8 +35,8 @@ def apicalls():
 
 
 def run_echopy_app():
-	import SocketServer
-	SocketServer.ThreadingTCPServer.allow_reuse_address = True
+	import socketserver
+	socketserver.ThreadingTCPServer.allow_reuse_address = True
 	echopy_app.run(app)
 
 
