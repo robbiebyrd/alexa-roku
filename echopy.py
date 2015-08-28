@@ -12,7 +12,7 @@
 import os
 import echopy_app
 import echopy_doc
-import echopy_helloworld as myApp
+import echopy_roku as myApp
 from flask import Flask, render_template, Response, send_from_directory, request, current_app, redirect, jsonify, json
 
 
@@ -28,7 +28,7 @@ def main():
 def apicalls():
 	if request.method == 'POST':
 		data = request.get_json()
-		print "POST"
+		print("POST")
 		sessionId = myApp.data_handler(data)
 		return sessionId + "\n"
 
