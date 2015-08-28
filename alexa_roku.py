@@ -49,7 +49,7 @@ def launch_request(session, user, request):
 
 def intent_request(session, user, request):
     global roku
-    print "intent_request"
+    print("intent_request")
 
     if request['intent']['name'] ==  "RokuPlay":
         output_speech = "Play"

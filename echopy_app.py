@@ -19,6 +19,6 @@ def run(app):
                 host='0.0.0.0'
                 )
     finally:
-        print "Disconnecting clients"
+        print("Disconnecting clients")
 
-    print "Done"
+    print("Done")
