@@ -19,7 +19,7 @@ def run(app):
                 port=5000,
                 ssl_context=context,
                 threaded=True,
-                use_reloader=False,
+                use_reloader=True,
                 use_debugger=True,
                 host='0.0.0.0'
                 )
