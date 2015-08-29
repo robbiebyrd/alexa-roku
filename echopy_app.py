@@ -10,7 +10,7 @@
 #################################################
 
 PATH_TO_CRT = '/etc/pki/tls/certs/star.robbiebyrd.com.crt'
-PATH_TO_KEY = '/etc/pki/tls/certs/star.robbiebyrd.com.key'
+PATH_TO_KEY = '/etc/pki/tls/private/star.robbiebyrd.com.key'
 
 def run(app):
 
