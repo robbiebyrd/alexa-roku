@@ -8,15 +8,19 @@
 # Features:                                     #
 #################################################
 #################################################
+
+PATH_TO_CRT = '/etc/pki/tls/certs/star.robbiebyrd.com.crt'
+PATH_TO_KEY = '/etc/pki/tls/certs/star.robbiebyrd.com.key'
+
 def run(app):
 
     try:
         from OpenSSL import SSL
         import ssl
         context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-        context.load_cert_chain('/etc/pki/tls/certs/star.robbiebyrd.com.crt', '/etc/pki/tls/private/star.robbiebyrd.com.key')
+        context.load_cert_chain(PATH_TO_CRT, PATH_TO_KEY)
         app.run(debug=True,
-                port=5000,
+                port=443,
                 ssl_context=context,
                 threaded=True,
                 use_reloader=True,

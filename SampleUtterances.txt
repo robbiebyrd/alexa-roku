@@ -1,24 +1,24 @@
-HelloWorldIntent say hello
-HelloWorldIntent say hello world
-HelloWorldIntent hello
-HelloWorldIntent say hi
-HelloWorldIntent say hi world
-HelloWorldIntent hi
-HelloWorldIntent how are you
+RokuPlay play
 
-HelpIntent help
-HelpIntent help me
-HelpIntent what can I ask you
-HelpIntent get help
-HelpIntent to help
-HelpIntent to help me
-HelpIntent what commands can I ask
-HelpIntent what commands can I say
-HelpIntent what can I do
-HelpIntent what can I use this for
-HelpIntent what questions can I ask
-HelpIntent what can you do
-HelpIntent what do you do
-HelpIntent how do I use you
-HelpIntent how can I use you
-HelpIntent what can you tell me
+RokuReverse rewind
+RokuReverse reverse
+RokuReverse back up
+
+RokuForward forward
+RokuForward fast forward
+RokuForward skip
+
+RokuHome home
+RokuSelect select
+RokuLeft left
+RokuRight right
+RokuDown down
+RokuUp up
+RokuBack back
+RokuBack go back
+RokuReplay replay
+RokuReplay replay that
+RokuInfo info
+RokuBackspace backspace
+RokuSearch {name|Search}
+RokuEnter enter
