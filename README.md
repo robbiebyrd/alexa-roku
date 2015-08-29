@@ -2,6 +2,9 @@
 # EchoRokuPy
 A python-based interface to the Roku streaming player and the Amazon Echo.
 
+## Based on...
+This project is heavily based on the work of Zachary Priddy (https://github.com/zpriddy), specifically https://github.com/zpriddy/ZP_EchoPy
+
 ## Requirements and setup
 EchoRokuPy is built using python with flask. Amazon also requires that the server running the code be publicly accessible on port 443 using https. This means that you will either have to host it on a VPS or port forward 443 from your router. 
 
