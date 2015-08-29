@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Virtualenv
 .Python
 bin
@@ -10,4 +9,3 @@ pyvenv.cfg
 .DS_Store
 =======
 *.pyc
->>>>>>> d4bc410d18497df24b073b43f156f7c04e81b655
