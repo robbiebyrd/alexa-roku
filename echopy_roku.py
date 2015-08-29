@@ -3,13 +3,14 @@ import json
 import roku
 appVersion = 1.0
 
+ROKU_IP = '72.182.86.27'
 
 def data_init():
     global MyDataStore
     MyDataStore = DataStore()
 
     global roku
-    roku = roku.Roku('72.182.86.27')
+    roku = roku.Roku(ROKU_IP)
 
 
 

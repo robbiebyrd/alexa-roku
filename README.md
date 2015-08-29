@@ -41,17 +41,33 @@ The ASK is available at: https://developer.amazon.com/public/solutions/alexa/ale
 ### Settings for SSL Server
 In the echopy_app.py file, there are two variables:
 
-3. PATH\_TO\_CRT
-3. PATH\_TO\_KEY
+######echopy_app.py
+````
+PATH_TO_CRT = '/path/to/server.crt'
+PATH_TO_KEY = '/path/to/server.key'
+````
 
 The CRT file should include your CRT file (self-signed is OK). If you are not using a self-signed CRT, then be sure to include the entire CRT chain (Root and Intermediaries) together in one file. Your private key should also be readable.
 
 To disable built-in SSL support, change the port from 443 and remove the ssl_context setting. Both are found in the echopy_app.py file. If you wish to use a proxy server, you can change the port to something other than 443 and point your proxy server to a new port. Simply remove the line "ssl_context=context" to disable SSL. You can also comment out the following lines:
 
-* import ssl
-* context = ssl.SSLContext(ssl.PROTOCOL\_TLSv1\_2)
-* context.load_cert_chain(PATH\_TO\_CRT, PATH\_TO\_KEY)
+######echopy_app.py:
+````
+# Comment these lines out with a hash
+import ssl
+context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+context.load_cert_chain(PATH_TO_CRT, PATH_TO_KEY)
+````
 
+##Setting the Roku IP
+In the echopy_roky.py file, there is a variable to set for your Roku. This IP should be the public IP of your gateway or home router.
+
+######echopy_roku.py:
+````
+ROKU_IP = '11.22.111.222'
+````
+
+You should also setup your gateway or router to forward port 8060 from the outside (Internet) and forward to the local IP of your Roku on the same port (8060). This will make your Roku publicly available on the Internet. While I know of no Roku-based attacks, know that it is not secure. I am working on something that will fix this problem.
 
 ## Usage
 ````
