@@ -43,7 +43,6 @@ def run_echopy_app():
     echopy_app.run(app)
 
 
-if __name__ == "__main__":
-    with daemon.DaemonContext():
+with daemon.DaemonContext():
     myApp.data_init()
     run_echopy_app()
