@@ -246,6 +246,7 @@ class DataStore:
         self.users = {}
 
     def getSession(self,session):
+        print(session)
         if session['new'] is True or session['sessionId'] not in self.sessions:
             self.sessions[session['sessionId']] = Session(session)
 

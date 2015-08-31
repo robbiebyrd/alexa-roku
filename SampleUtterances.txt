@@ -1,4 +1,5 @@
 RokuPlay play
+RokuPlay pause
 
 RokuReverse rewind
 RokuReverse reverse
