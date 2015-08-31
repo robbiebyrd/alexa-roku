@@ -43,7 +43,5 @@ def run_echopy_app():
     echopy_app.run(app)
 
 
-with daemon.DaemonContext():
-    myApp.data_init()
-    print('run')
-    run_echopy_app()
+myApp.data_init()
+run_echopy_app()
