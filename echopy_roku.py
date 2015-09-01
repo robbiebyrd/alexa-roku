@@ -43,7 +43,7 @@ def launch_request(session, user, request):
 
     card_type = "Simple"
     card_title = "Roku Control App - Welcome"
-    card_content = "Welcome to the Roku Control app. Please say a command to get started."
+    card_content = "Roku listening."
 
     response = {"outputSpeech": {"type":output_type,"text":output_speech},"card":{"type":card_type,"title":card_title,"content":card_content},'shouldEndSession':False}
 
