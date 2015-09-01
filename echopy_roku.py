@@ -38,12 +38,12 @@ def request_handler(session, user, request):
 
 
 def launch_request(session, user, request):
-    output_speech = "Welcome to Roku Control App. Please say a command."
+    output_speech = "Roku listening."
     output_type = "PlainText"
 
     card_type = "Simple"
     card_title = "Roku Control App - Welcome"
-    card_content = "Roku listening."
+    card_content = "Welcome to the Roku Control App. You can say: Play, Home, Select, etc."
 
     response = {"outputSpeech": {"type":output_type,"text":output_speech},"card":{"type":card_type,"title":card_title,"content":card_content},'shouldEndSession':False}
 
